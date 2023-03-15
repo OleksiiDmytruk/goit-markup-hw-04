@@ -10,6 +10,7 @@
   --color-btn-text-accent: #ffffff;
   --color-border: #e7e9fc;
   --color-footer-logo: #f4f4fd;
+  --bgd-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   --gap: 24px;
 }
 body {
@@ -123,6 +124,10 @@ h6 {
 
 .hero {
   background-color: var(--color-bgd);
+  background-image: var(--bgd-gradient), url(../images/main-page/hero-bgd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -164,6 +169,16 @@ h6 {
 .feature-item {
   width: calc((100% - 3 * 24px) / 4);
 }
+.feature-icon-box {
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  background-color: var(--color-btn-bgd);
+  border-radius: 4px;
+}
+.feature-icon {
+  width: 64px;
+  height: 64px;
+}
 .product {
   padding-top: 0;
 }
@@ -193,6 +208,24 @@ h6 {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color-text-accent);
   text-align: center;
+}
+.team-soc-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-soc-link {
+  background: var(--color-btn-text);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-soc-icon {
+  width: 16px;
+  height: 16px;
 }
 .title {
   font-size: 36px;
